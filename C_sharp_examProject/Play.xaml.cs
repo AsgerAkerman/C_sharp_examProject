@@ -17,7 +17,7 @@ using System.Windows.Threading;
 
 namespace C_sharp_examProject
 {
-   >
+   
     public partial class Play : Page
     {
 
