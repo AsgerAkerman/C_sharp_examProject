@@ -1,0 +1,25 @@
+﻿<Page x:Class="C_sharp_examProject.ChooseGamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:C_sharp_examProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="ChooseGamePage"
+      Background="DarkSlateGray">
+
+    <Grid>
+        <Image Source="/images/spaceinvader.png" Margin="383,145,333,175"  />
+        <Image Source="/images/racingPic.png" Margin="573,193,-95,190" />
+        <Image Source="/images/bubblePic.png" Margin="51,71,656,88"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Highscore:" TextWrapping="Wrap" FontSize="20" Foreground ="Red" Name="Highscore3" Margin="739,151,0,0" />
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Highscore:" TextWrapping="Wrap" FontSize="20" Foreground ="Red" Name="Highscore2" Margin="383,156,0,0" />
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Highscore:" TextWrapping="Wrap" FontSize="20" Foreground ="Red" Margin="51,151,0,0" Name="Highscore1" />
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Choose your game" TextWrapping="Wrap" FontSize="30" Foreground ="Red" Margin="383,71,0,0"/>
+        <Button x:Name="playBubbleTrouble" Content="Play Bubble Trouble" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="145" Margin="124,452,0,0" Click="playBubbleTrouble_onClick"/>
+        <Button x:Name="playSpaceInvader" Content="Play Hovederne kommer" HorizontalAlignment="Left" Margin="436,452,0,0" VerticalAlignment="Top" Height="50" Width="145" Click="playSpaceInvader_onClick"/>
+        <Button x:Name="playEpicRacing" Content="Play Epic racing" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Height="50" Margin="756,452,0,0" Click="playEpicRacing_onClick"/>
+    </Grid>
+   
+</Page>

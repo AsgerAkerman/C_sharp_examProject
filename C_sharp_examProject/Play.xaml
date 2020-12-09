@@ -1,0 +1,26 @@
+﻿<Page x:Class="C_sharp_examProject.Play"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:C_sharp_examProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="Play"
+      Background="White">
+
+    <Canvas x:Name="playArea" Background="Gray" Focusable="True" KeyDown="KeyPressed" KeyUp="KeyReleased">
+
+        <Label Name="shotsLeft" Foreground="Black" FontSize="14">Shots left: 40</Label>
+        <Label Name="invadersHit" Foreground="Black" FontSize="14" Canvas.Left="430">Invaders hit: 0</Label>
+        <Label Name="Highscore" Foreground="Black" FontSize="14" Canvas.Left="888">Highscore: 0</Label>
+
+        <TextBlock x:Name="gameOverText" Foreground="Black" FontSize="20" Canvas.Left="390" Canvas.Top="200"/>
+        <UserControl 
+            Loaded="UserControl_Loaded">
+        </UserControl>
+
+        <Rectangle x:Name="playerModel" Fill="Black" Height="70" Width="52" Canvas.Left="466" Canvas.Top="480"></Rectangle>
+
+    </Canvas>
+</Page>

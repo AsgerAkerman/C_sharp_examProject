@@ -1,0 +1,20 @@
+﻿<Page x:Class="C_sharp_examProject.EpicRacing"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:C_sharp_examProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="EpicRacing" Height="600" Width="500" FocusManager.FocusedElement="{Binding ElementName=myCanvas}">
+    <Canvas Name="myCanvas" Background="Gray" Focusable="True" KeyDown="Canvas_ButtonDown" KeyUp="Canvas_ButtonUp">
+        <UserControl 
+            Loaded="UserControl_Loaded">
+        </UserControl>
+        <Label Foreground="White" Name="Time" FontSize="16" FontWeight="ExtraBold">Time:</Label>
+        <Label Foreground="White" Name="Level" FontSize="16" FontWeight="ExtraBold" RenderTransformOrigin="1.504,5.859" Canvas.Top="37">Level: 1</Label>
+        <TextBlock x:Name="gameOverText" Foreground="Black" FontSize="20" Canvas.Left="15" Canvas.Top="213" RenderTransformOrigin="0.5,0.5" Width="467" Height="90"/>
+        <Rectangle Name="player1" Fill="White" Height="35" Width="35" Canvas.Left="206" Canvas.Top="444" />
+    </Canvas>
+
+</Page>

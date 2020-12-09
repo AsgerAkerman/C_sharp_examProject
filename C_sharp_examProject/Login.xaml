@@ -1,0 +1,24 @@
+﻿<Page x:Class="C_sharp_examProject.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:C_sharp_examProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="Login"
+      Background="White">
+
+    <StackPanel Margin="15">
+        <Label Content="Login Page" FontSize="30" HorizontalAlignment="Center"/>
+        <Separator Background="Black"></Separator>
+        <Label Content="Username" FontSize="20" HorizontalAlignment="Center"/>
+        <TextBox x:Name="loginUsername" Background="LightGray" Height="25" Width="300"/>
+        <Separator Background="Gray" Height="30" Width="320"></Separator>
+        <Label Content="Password" FontSize="20" HorizontalAlignment="Center"/>
+        <PasswordBox x:Name="loginPassword" Background="LightGray" Height="25" Width="300"/>
+        <Button x:Name="loginButton" Content="Login" FontSize="20" Height="40" Width="200" Margin="285,100,284.6,0" Click="loginButton_onClick"/>
+
+    </StackPanel>
+    
+</Page>
